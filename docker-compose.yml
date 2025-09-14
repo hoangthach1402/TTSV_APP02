@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  ttsv:
+    build: .
+    image: ttsv_app:latest
+    ports:
+      - "3005:3005"
+    environment:
+      - ADMIN_KEY=secret
+    volumes:
+      - ./student.json:/usr/src/app/student.json
+    restart: unless-stopped

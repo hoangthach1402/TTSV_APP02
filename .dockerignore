@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+.git
+.env
+README.md
+/.vscode
+/.gitignore
+public/*.map
+test
+**/node_modules
+dist
+Dockerfile
